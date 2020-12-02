@@ -72,7 +72,7 @@ The goal of this implementation is to be simple, highly extensible, and easy to 
       python train.py --batch_size 2 --list_GPU_ids 1 0 --max_iter 80000
       ~~~
       
-      **Larger batch_size will bring higher accuracy. If you want to train C3D with batch size of 4, use:**<br> 
+      **Larger batch_size will bring more stable results. If you want to train C3D with batch size of 4, use:**<br> 
       
      	`python train.py --batch_size 4 --list_GPU_ids 3 2 1 0 --max_iter 80000`
 	- DCNN：
