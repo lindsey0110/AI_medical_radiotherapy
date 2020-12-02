@@ -10,7 +10,7 @@ This repository contains an PyTorch implementation for radiotherapy dose predict
 
 The goal of this implementation is to be simple, highly extensible, and easy to integrate into your own projects. This implementation is a work in progress -- more dose prediction models are currently being implemented. Currently support：
 
-- C3D, a cascade 3D network for radiotherapy dose prediction, the 1st place solution to the AAPM OpenKBP challenge
+- C3D (under review), a cascade 3D network for radiotherapy dose prediction, the 1st place solution to the AAPM OpenKBP challenge <br>(Official OpenKBP paper is now available on [arXiv]( https://arxiv.org/abs/2011.14076))
 
 - [DCNN](https://doi.org/10.1088/1361-6560/aba87b), a lightweight and accurate dose prediction method
 
@@ -43,7 +43,7 @@ The goal of this implementation is to be simple, highly extensible, and easy to 
 1. Data Preparation
 	- Download [OpenKBP challenge repository](https://github.com/ababier/open-kbp), and copy the repository to <br> `/path_to_your_RTDosePrediction/RTDosePrediction/Data/`
 
-	**For me,  /path_to_your_RTDosePrediction/ is E://Project/RTDosePrediction-main/**
+		**For me,  `/path_to_your_RTDosePrediction/` is `E://Project/RTDosePrediction-main/`**
     - C3D：
 
       ~~~
@@ -51,12 +51,15 @@ The goal of this implementation is to be simple, highly extensible, and easy to 
       python prepare_OpenKBP_C3D.py
       ~~~
 		
+		The training Data will be saved in `/path_to_your_RTDosePrediction/RTDosePrediction/Data/OpenKBP_C3D`
    - DCNN：
 
       ~~~
       cd /path_to_your_RTDosePrediction/RTDosePrediction/Src/DataPrepare
       python prepare_OpenKBP_DCNN.py
       ~~~
+      
+      The training Data will be saved in `/path_to_your_RTDosePrediction/RTDosePrediction/Data/OpenKBP_DCNN`
 
 
 
@@ -68,8 +71,10 @@ The goal of this implementation is to be simple, highly extensible, and easy to 
       cd /path_to_your_RTDosePrediction/RTDosePrediction/Src/C3D
       python train.py --batch_size 2 --list_GPU_ids 1 0 --max_iter 80000
       ~~~
-      **If you have more GPUs， we suggest set batch_size to 4 and reset list_GPU_ids. <br> 
-      For example, python train.py --batch_size 4 --list_GPU_ids 3 2 1 0 --max_iter 80000**
+      
+      **Larger batch_size will bring higher accuracy. If you want to train C3D with batch size of 4, use:**<br> 
+      
+     	`python train.py --batch_size 4 --list_GPU_ids 3 2 1 0 --max_iter 80000`
 	- DCNN：
 
       ~~~
@@ -81,6 +86,8 @@ The goal of this implementation is to be simple, highly extensible, and easy to 
 
 
 3. Testing
+
+	The prediction results will be saved in `/path_to_your_RTDosePrediction/RTDosePrediction/Output/XXX/Prediction`
 
 	- C3D：
 
