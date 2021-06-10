@@ -128,7 +128,7 @@ if you find C3D and DCNN useful in your research, please consider citing:
 @article{C3D,
    title = {Cascade 3D Network for Radiotherapy Dose Prediction : 1st Place Solution to OpenKBP Challenge},
    author = {Shuolin Liu and Jingjing Zhang and Teng Li and Hui Yan  and Jianfei Liu},
-   journal = {Medical Physics, under review}
+   journal = {Medical Physics,  https://doi.org/10.1002/mp.15034}
 }
 ~~~
 - DCNN
