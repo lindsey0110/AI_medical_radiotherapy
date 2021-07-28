@@ -10,9 +10,9 @@ This repository contains an PyTorch implementation for radiotherapy dose predict
 
 The goal of this implementation is to be simple, highly extensible, and easy to integrate into your own projects. This implementation is a work in progress -- more dose prediction models are currently being implemented. Currently support：
 
-- C3D a cascade 3D network for radiotherapy dose prediction, the 1st place solution to the AAPM OpenKBP challenge <br>(Official OpenKBP paper is now available on [arXiv]( https://arxiv.org/abs/2011.14076))
+- C3D: a cascade 3D network for radiotherapy dose prediction, the 1st place solution to the AAPM OpenKBP challenge <br>(Official OpenKBP paper is now available on [arXiv]( https://arxiv.org/abs/2011.14076))
 
-- [DCNN](https://doi.org/10.1088/1361-6560/aba87b), a lightweight and accurate dose prediction method
+- [DCNN](https://doi.org/10.1088/1361-6560/aba87b): a lightweight and accurate dose prediction method
 
 
 ## Performance
