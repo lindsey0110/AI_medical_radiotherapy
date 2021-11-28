@@ -10,19 +10,21 @@ This repository contains an PyTorch implementation for radiotherapy dose predict
 
 The goal of this implementation is to be simple, highly extensible, and easy to integrate into your own projects. This implementation is a work in progress -- more dose prediction models are currently being implemented. Currently support：
 
-- C3D: a cascade 3D network for radiotherapy dose prediction, the 1st place solution to the AAPM OpenKBP challenge <br>(Official OpenKBP paper is now available on [arXiv]( https://arxiv.org/abs/2011.14076))
+- [C3D](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.15034): a cascade 3D network for radiotherapy dose prediction, the 1st place solution to the AAPM OpenKBP challenge 
 
-- [DCNN](https://doi.org/10.1088/1361-6560/aba87b): a lightweight and accurate dose prediction method
+- [DCNN](https://doi.org/10.1088/1361-6560/aba87b): a lightweight dose prediction method
+
+- [HD-Unet](https://iopscience.iop.org/article/10.1088/1361-6560/ab039b): a hierarchically densely connected U-net, Dan Nguyen et al
 
 
 ## Performance
-- Results on OpenKBP **Test Set** using a **Single model** with test-time augmenation(TTA)
+- Results on [OpenKBP](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.14845) **Test Set** using a **Single model** with test-time augmenation(TTA)
 
 | Model | Batch<br>size | GPU<br>memory | Training<br>iterations | Training<br>time |   Dose<br>score|  DVH<br>score|Pre-trained<br>Models|
 |-----| :------------: | :----: | :----: | :----: |:----: |  :------------: |:----: |
-| C3D<br>(3D) | 2 | 18Gb | 80,000 | 50 hours<br>(Two 1080TIs)|  **2.46** |**1.46** |  [Google Drive](https://drive.google.com/file/d/1YaXkOCfH-nrKD3nli5_Z6stF1rYWMA-v/view?usp=sharing) <br> [Baidu Drive, PassWord：voni](https://pan.baidu.com/s/1vwElN1xa8Zk1OlziPFsXgw)|
+| [C3D](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.15034)<br>(3D) | 2 | 18Gb | 80,000 | 50 hours<br>(Two 1080TIs)|  **2.46** |**1.46** |  [Google Drive](https://drive.google.com/file/d/1YaXkOCfH-nrKD3nli5_Z6stF1rYWMA-v/view?usp=sharing) <br> [Baidu Drive, PassWord：voni](https://pan.baidu.com/s/1vwElN1xa8Zk1OlziPFsXgw)|
 | [DCNN](https://doi.org/10.1088/1361-6560/aba87b)<br>(2D) | 32 | **3Gb** | 100,000 | **20 hours<br>(Single 1080TI)**|  2.75 |1.68 | [Google Drive](https://drive.google.com/file/d/1dWOYf7rmmyxco5pF75j8Qqt6U9ZmsmhK/view?usp=sharing) <br> [Baidu Drive, PassWord：j56y](https://pan.baidu.com/s/1EVG5wP_n04dcphAft1p6-w)|
-
+[HD-Unet](https://iopscience.iop.org/article/10.1088/1361-6560/ab039b)<br>(3D) | 2 | 16Gb | 80,000 | - hours<br>(Single A100)|  2.59 |1.64 | [Google Drive](https://drive.google.com/file/d/1ooFvPu288yBZLYK6tBuI-RT4f2bMCdYo/view?usp=sharing) <br> [Baidu Drive, PassWord：cc61](https://pan.baidu.com/s/1yXOo2edxbSu4Or30Mpo5FA)|
 
 - OpenKBP leaderboard
 
