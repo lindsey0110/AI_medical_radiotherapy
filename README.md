@@ -14,7 +14,7 @@ The goal of this implementation is to be simple, highly extensible, and easy to 
 
 - [DCNN](https://doi.org/10.1088/1361-6560/aba87b): a lightweight dose prediction method
 
-- [HD-Unet](https://iopscience.iop.org/article/10.1088/1361-6560/ab039b): a hierarchically densely connected U-net, Dan Nguyen et al
+- [HD-Unet](https://iopscience.iop.org/article/10.1088/1361-6560/ab039b): a hierarchically densely connected U-net, Dan Nguyen et al. Compared to original HD-Unet paper, we add instance normalization (IN) for better performance. We reported the results of original HD-Unet in C3D paper
 
 
 ## Performance
