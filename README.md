@@ -5,7 +5,7 @@ Automatic Radiotherapy Treatment Planning ， Knowledge-Based Planning ， Dose 
 Please feel free to concat me if you have any questions，
 email: **1980073622@qq.com**, Shuolin Liu
 
-## Warning !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+## Warning， this repository will be closed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Due to some conflicts of interest, this repository will be closed in two weeks. If you wish to continue using it, please copy the codes and save them to your own machine. The licence for these codes is still the MIT licence.
 
 
